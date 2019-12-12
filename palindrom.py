@@ -15,10 +15,20 @@ def isPalindrome(stirng):
 
 # Driver code
 print("'Pls input digit to check if it is palindrom or not'\n")
-string = str(input())
-ans = isPalindrome(string)
 
-if ans == 1:
-    print("Yes")
+string = str(input())
+
+digit=int(string)
+
+
+if digit>0:
+    print("подходящее число")
+    ans = isPalindrome(string)
+
+    if ans == 1:
+        print("Оно является палиндромом")
+    else:
+        print("Нет, это не палиндором")
 else:
-    print("No")
+    print("вы ввели отрицательное число")
+
